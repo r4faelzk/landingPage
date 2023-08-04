@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="form.css">
+    <style>
+        /* responsivo */
+     @media screen and (max-width: 900px){
+
+        .topnav{
+            height: 260px;
+            position: fixed;
+            top: 0;
+        }
+
+        .logo img{
+            height: 100px;
+        }
+
+        .conteudo-nav{
+            flex-direction: column;
+            padding: 20px 0;
+        }
+
+        .menu{
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+        }
+
+        .menu li {
+            border-bottom: 1px solid #333;
+        }
+
+        .Texto{
+            display: none;
+        }
+        
+        .menu li:hover .submenu, .menu li:hover .submenu2, .menu li:hover .submenu3, .menu li:hover .submenu1{
+        display: none;
+        }
+        
+
+        .form-box{
+                width: 100%;
+            }
+
+        .container{
+            width: 70%;
+            height: auto;
+        }
+
+        .input-group{
+            flex-direction: column;
+            overflow-y: scroll;
+            flex-wrap: nowrap;
+            max-height: 200px;
+            padding-right: 15px;
+        }
+
+        .input-radio{
+            margin-top: 15px;
+        }
+
+        .radio-group{
+            flex-direction: column;
+        }
+
+        .botao{
+            margin-left: 10%;
+        }
+     }
+     /* fim responsivo */
+        
+    </style>
+</head>
+<body>
+    <!-- menu do site -->
+    <nav class="topnav">
+        <div class="conteudo-nav">
+            <div class="logo">
+                <img src="imagens/logo_site.png" alt="">
+            </div>
+        <ul class="menu">
+                <li>
+                    <a href="principal.html">Inicio </a> 
+                </li>
+                <li>
+                    Produtos
+                    <!-- submenu do site -->
+                    <ul class="submenu">
+                        <li>Notebook</li>
+                        <li>Smartphone</li>
+                        <li>Fones</li>
+                    </ul>
+                    <!-- fim submenu do site -->
+                </li>
+                <li>
+                    Serviços
+                    <!-- submenu do site -->
+                    <ul class="submenu2">
+                        <li>Conserto</li>
+                        <li>Vendas</li>
+                        <li>Remoção de vírus</li>
+                        <li>Instalações</li>
+                    </ul>
+                    <!-- fim submenu do site -->
+                </li>
+                <li>
+                    Contatos
+                    <!-- submenu do site -->
+                    <ul class="submenu3">
+                        <li>(11) 94533-6820</li>
+                        <li>4181-2917</li>
+                    </ul>
+                    <!-- fim submenu do site -->
+                </li>
+        </ul>
+        </div>
+    </nav>
+    <!-- fim do menu do site -->
+
+
+    <!-- div conteúdo da página -->
+    <div class="container">
+
+        <!-- div sobre nós -->
+        <div class="Texto">
+            <h2>Sobre a ConsertCell</h2>
+        <p>
+            A <span class="Cell">ConsertCell</span>  atua a pouco tempo no mercado de tecnologia, foi constituída em maio de 2019 e desde então possui o objetivo de ser a melhor no que faz, buscando sempre o reconhecimento de seus clientes, oferecendo produtos e serviços com qualidade, rapidez, preços baixos e um atendimento especializado.
+            <br><br>
+            Somos Especialistas em Consertos das Marcas:
+            iPhone, LG, Motorola, Samsung e Xiaomi.
+            <br><br>
+            Temos uma loja digital, onde você encontra uma grande variedade de acessórios originais comprados direto com os fabricantes e distribuidores autorizados para o seu celular. Todos os nossos produtos possuem garantia e nota fiscal.</p>
+        </div>
+        <!-- fim div sobre nós -->
+
+        <!-- div do formulário -->
+        <div class="form-box">
+            <form action="#">
+
+                <!-- div de cabeçalho da página -->
+                <div class="form-header">
+                    <div class="titulo">
+                        <h1>Orçamento</h1>
+                    </div>
+                </div>
+                <!-- fim div de cabeçalho da página -->
+
+                <!-- divs com o input -->
+                <div class="input-group">
+
+                    <!-- div tipo text -->
+                    <div class="input-box">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite o seu nome completo">
+                    </div>
+                    <!-- fim div tipo text -->
+
+
+                    <!-- div  tipo email -->
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite o seu email">
+                    </div>
+                    <!-- fim div  tipo email -->
+
+                    <!-- div tipo text -->
+                      <div class="input-box">
+                        <label for="Serviço">Serviço desejado</label>
+                        <input type="text" name="Serviço" id="Serviço" placeholder="Escreva o serviço desejado">
+                    </div>
+                    <!-- fim div tipo text -->
+
+                    <!-- div tipo telefone -->
+                    <div class="input-box">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="número de celular">
+                    </div>
+                    <!-- fim div tipo telefone -->
+
+
+                    <!-- div tipo number -->
+                    <div class="input-box">
+                        <label for="numero">Quantidade aparelhos</label>
+                        <input type="number" name="numero" id="numero" placeholder="Quantos aparelhos">
+                    </div>
+                    <!-- fim div tipo number -->
+                </div>
+
+                    <!-- div input radio -->
+                    <div class="input-radio">
+                        <div class="input-titulo">
+                            <h5>Forma de pagamento</h5>
+                        </div>
+
+                        <div class="radio-group">
+                            <div class="radio-input">
+                                <input type="radio" name="opcao" id="dinheiro">
+                                <label for="dinheiro">Dinheiro</label>
+                            </div>
+
+                            <div class="radio-input">
+                                <input type="radio" name="opcao" id="cartao">
+                                <label for="cartao">Cartão</label>
+                            </div>
+
+                            <div class="radio-input">
+                                <input type="radio" name="opcao" id="pix">
+                                <label for="pix">Pix</label>
+                            </div>
+
+                            <div class="radio-input">
+                                <input type="radio" name="opcao" id="outros">
+                                <label for="outros">Outros</label>
+                            </div>
+                        </div>
+                    </div>
+                <!-- fim div input radio -->
+               
+                <!-- div tipo checkbox -->
+                <div class="input-box2">
+                    <input type="checkbox" id="termos" name="termos">
+                    <label for="termos">Declaro que li e aceito os termos e condições</label>
+                </div>
+                <!-- fim div tipo checkbox -->
+
+                 <!-- fim divs com input -->
+
+                <!-- botao de concluir o orçamento -->
+                <div class="botao">
+                    <a href="#">Concluir</a>
+                </div>
+                <!-- fim botao de concluir o orçamento -->
+
+            </form>
+        </div>
+         <!-- div do formulário -->
+    
+    </div>
+    <!-- fim div conteúdo da página -->
+</body>
+</html>

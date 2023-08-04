@@ -1,0 +1,294 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 120vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.botao{
+    display: inline-block;
+    padding: 20px 80px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+.botao:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #111;
+    font-weight: bold;
+}
+
+/*menu position fixed*/
+.topnav{
+    width: 100%;
+    background: #111;
+    color:white;
+    height: 130px;
+    position: fixed;
+    top: 0;
+}
+/*fim menu position fixed*/
+
+
+/* configurações do menu */
+.conteudo-nav{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu li{
+    padding: 5px 25px;
+    font-size: 1.2rem;
+}
+
+.menu li:hover{
+    border-bottom: 3px solid #fff;
+}
+/* fim configurações do menu */
+
+/* logo do site */
+.logo img{
+    width: 10vh;
+    height: 80px;
+}
+/* fim logo do site */
+
+/* submenu do site */
+.submenu1{
+    display: none;
+    position: fixed;
+    top: 11%;
+    right: 29%; 
+    background: #111;
+}
+
+.submenu{
+    display: none;
+    position: fixed;
+    top: 11%;
+    right: 25%;
+    background: #111;
+}
+
+.submenu2{
+    display: none;
+    position: fixed;
+    top: 11%;
+    right: 14%;
+    background: #111;
+}
+
+.submenu3{
+    display: none;
+    position: fixed;
+    top: 11%;
+    right: 7%;
+    background: #111;
+}
+
+.submenu li, .submenu2 li, .submenu3 li, .submenu1 li{
+    padding: 15px 25px;
+    display: block;
+}
+
+.submenu li:hover, .submenu1 li:hover, .submenu2 li:hover, .submenu3 li:hover{
+    border-top: none;
+    background-color: #fff;
+    color: black;
+}
+
+.menu li:hover .submenu, .menu li:hover .submenu2, .menu li:hover .submenu3, .menu li:hover .submenu1{
+    display: block;
+}
+/* fim submenu do site */
+
+/* div container onde foi dividido em dois conteúdos */
+.container{
+    display: flex;
+    margin-top: 8%;
+    width: 80%;
+    height: 90vh;
+    box-shadow: 5px 5px 25px black;
+}
+/* fim div container */
+
+
+/* div texto sobre a empresa e configurações*/
+.Texto{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background: url("imagens/iphone2.jpg");
+    background-size: 90vh 100vh;
+    padding: 5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: color;
+}
+
+.Texto p{
+    font-size: 1.1rem;
+    color: white;
+}
+
+.Texto h2{
+    color: #6c63ff;
+}
+
+.Cell{
+    color: orangered;
+}
+/* fim div texto sobre a empresa e configurações*/
+
+/* div do formulário */
+.form-box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: black;
+}
+/* fim div do formulário */
+
+/* cabelaçalho */
+.form-header{
+    display: flex;
+    justify-content: center;
+}
+/* fim cabelaçalho */
+
+/* div do titulo orçamento */
+.titulo h1{
+    color: white;
+}
+/* fim div do titulo orçamento */
+
+/* divs que usei para separar mais facil as input */
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+ .input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+/* configurações do input onde a pessoa digita */
+.input-box input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 15px;
+}
+
+.input-box input:hover{
+    background-color: gray;
+}
+
+.input-box label, .input-titulo h5{
+    font-size: 1rem;
+    font-weight: 6000;
+    color: white;
+}
+
+.input-box input::placeholder{
+    color: black;
+}
+
+/* configurações do input radio */
+.radio-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.65rem;
+    padding: 0.8rem 1rem;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.radio-input{
+    display: flex;
+    align-items: center;
+}
+
+.radio-input input{
+    margin-right: 0.35rem;
+}
+
+.radio-input label{
+    font-size: 1rem;
+    color: black;
+}
+/* configurações do input radio */
+
+
+/* configurações do checkbox */
+.input-box2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 1.4rem;
+}
+
+.input-box2 input{
+    margin-right: 0.5rem;
+}
+/* fim configurações do checkbox */
+
+/* botao de concluir o orçamento */
+.botao{
+    margin-top: 4rem;
+    padding: 0;
+    margin-left: 25%;
+}
+
+.botao a{
+    background-color: #6c63ff;
+    padding: 15px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid white;
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* fim botao de concluir o orçamento */
+
+
+

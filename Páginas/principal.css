@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* configurações do botão de solicitar orçamento */
+a{
+    text-decoration: none;
+}
+
+.botao{
+    display: inline-block;
+    padding: 20px 80px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.botao:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #111;
+    font-weight: bold;
+}
+/* fim configurações do botão de solicitar orçamento */
+
+
+/*Div position fixed*/
+.topnav{
+    width: 100%;
+    background: #111;
+    color:white;
+    height: 130px;
+    position: fixed;
+    top: 0;
+}
+/*fim Div position fixed*/
+
+
+/* configurações do menu */
+.conteudo-nav{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu li{
+    padding: 5px 25px;
+    font-size: 1.2rem;
+}
+
+.menu li:hover{
+    border-bottom: 3px solid #fff;
+}
+/* fim configurações do menu */
+
+
+/* logo do site imagem */
+.logo img{
+    width: 10vh;
+    height: 80px;
+}
+/* fim logo do site imagem */
+
+/* configurações do submenu */
+.submenu1{
+    display: none;
+    position: fixed;
+    top: 11%;
+    right: 26%; 
+    background: #111;
+}
+
+.submenu{
+    display: none;
+    position: fixed;
+    top: 11%;
+    right: 24%;
+    background: #111;
+}
+
+.submenu2{
+    display: none;
+    position: fixed;
+    top: 11%;
+    right: 14%;
+    background: #111;
+}
+
+.submenu3{
+    display: none;
+    position: fixed;
+    top: 11%;
+    right: 7%;
+    background: #111;
+}
+
+.submenu li, .submenu2 li, .submenu3 li, .submenu1 li{
+    padding: 15px 25px;
+    display: block;
+}
+
+.submenu li:hover, .submenu1 li:hover, .submenu2 li:hover, .submenu3 li:hover{
+    border-top: none;
+    background-color: #fff;
+    color: black;
+}
+
+.menu li:hover .submenu, .menu li:hover .submenu2, .menu li:hover .submenu3, .menu li:hover .submenu1{
+    display: block;
+}
+/* fim configurações do submenu */
+
+
+/* banner onde inseri a imagem de fundo e parte do contéudo*/
+.banner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url('imagens/fundo.png') no-repeat center center/cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: color;
+}
+
+.banner-container{
+    text-align: center;
+}
+
+.banner-container h1{
+    font-size: 3.5rem;
+}
+.banner-container h2{
+    font-size: 2.5rem;
+}
+
+.banner-container p{
+    font-size: 1.2rem;
+    padding-bottom: 10px ;
+}
+/* fim banner */
+ 
+/* texto do banner e configurações */
+.texto{
+    padding: 10px;
+    width: 85%;
+    margin: auto;
+}
+
+.texto p{
+    font-size: 1.3rem;
+    text-align:center;
+}
+/* fim texto do banner e configurações */
+
+/* segunda página e suas configurações  */
+.pagina{
+    height: 1450px;
+}
+
+.texto2, .texto1{
+    width: 40%;
+}
+
+.texto1 p, .texto2 p{
+    font-size: 1.4rem;
+    font-family: arial;
+}
+
+.texto1 h2, .texto2 h2{
+    font-size: 2.2rem;
+    font-family: arial;
+}
+
+.text{
+    width: 100%;
+    height: 900px;
+}
+.texto1{
+    margin-left: 34%;
+    margin-top: 120px;
+}
+
+.texto2{
+    margin-left: 22%;
+    margin-top: 168px;
+}
+
+.texto1 img{
+    margin-left: -69%;
+    margin-top: -50%;
+}
+
+.texto2 img{
+    margin-left: 100% ;
+    margin-top: -40%;
+}
+
+.texto2 a, .texto1 a{
+    display: inline-block;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background: rgb(8, 77, 14);
+    color: white;
+    border-radius: 25px;
+}
+
+.texto2 a:hover, .texto1 a:hover{
+    background-color: rgb(0, 0, 0);
+    scale: 1.1;
+    font-weight: bold;
+}
+/* fim página 2 */

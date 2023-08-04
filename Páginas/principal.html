@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <link rel="stylesheet" href="principal.css">
+    <style>
+        /* responsivo */
+        @media screen and (max-width: 900px){
+         .topnav{
+            height: 260px;
+            position: fixed;
+            top: 0;
+        }
+
+        .logo img{
+            height: 100px;
+        }
+
+        .conteudo-nav{
+            flex-direction: column;
+            padding: 20px 0;
+        }
+
+        .banner-container{
+            margin-top: 180px;
+            flex-direction: column;
+        }
+
+        .menu{
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+        }
+
+        .menu li:hover .submenu, .menu li:hover .submenu2, .menu li:hover .submenu3, .menu li:hover .submenu1{
+        display: none;
+        }
+
+        .menu li {
+            border-bottom: 1px solid #333;
+        }
+
+        .texto{
+            width: 100%;
+            height: auto;
+        }
+
+        .pagina{
+            height: auto;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .text{
+            flex-direction: column;
+        }
+
+        .texto1, .texto2{
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 25px 20px;
+        }
+
+        .texto1 img, .texto2 img{
+            width: 50%;
+            height: auto;
+            margin: 0;
+        }
+    }
+    /* fim responsivo */
+    </style>
+</head>
+<body>
+   <!-- menu do site -->
+   <nav class="topnav">
+    <div class="conteudo-nav">
+        <div class="logo">
+            <img src="imagens/logo_site.png" alt="">
+        </div>
+    <ul class="menu">
+            <li>
+                <a href="principal.html">Inicio </a> 
+            </li>
+            <li>
+                Produtos
+                <!-- submenu do site -->
+                <ul class="submenu">
+                    <li>Notebook</li>
+                    <li>Smartphone</li>
+                    <li>Fones</li>
+                </ul>
+                <!-- fim submenu do site -->
+            </li>
+            <li>
+                Serviços
+                <!-- submenu do site -->
+                <ul class="submenu2">
+                    <li>Conserto</li>
+                    <li>Vendas</li>
+                    <li>Remoção de vírus</li>
+                    <li>Instalações</li>
+                </ul>
+                <!-- fim submenu do site -->
+            </li>
+            <li>
+                Contatos
+                <!-- submenu do site -->
+                <ul class="submenu3">
+                    <li>(11) 94533-6820</li>
+                    <li>4181-2917</li>
+                </ul>
+                <!-- fim submenu do site -->
+            </li>
+    </ul>
+    </div>
+</nav>
+<!-- fim do menu do site -->
+
+    <!-- div banner onde inseri uma imagem de fundo -->
+    <div class="banner">
+
+        <!-- div onde inseri o conteúdo do banner como o texto -->
+        <div class="banner-container">
+            <h1>
+                ConsertCell
+            </h1>
+            <h2>Assistência técnica para seu celular</h2>
+          
+            <div class="texto">
+            <p>
+                Oferecemos o melhor atendimento e serviço aos nossos clientes!
+                Precisa de atendimento especializado ao seu aparelho, temos um time técnico pronto para lhe atender.
+                Trabalhamos com diversas marcas, e temos uma variedade de produtos a disposição.
+            </p>
+            </div>
+
+                <!-- link que liga a página de formulário -->
+                <a href="form.html" class="botao">Solicite um orçamento</a>  
+                <!-- fim link que liga a página de formulário -->
+        </div>
+        <!-- fim div onde inseri o conteúdo  -->
+
+    </div>
+    <!-- fim div banner -->
+
+
+<!-- div da segunda página  -->
+<div class="pagina">
+
+<!-- div onde inseri texto e imagem sobre celular -->
+<div class="text">
+
+    <!-- div texto 1, criei para separar dois tipos de celulares  -->
+    <div class="texto1">
+        <h2>Assistência técnica <br> Iphone</h2>
+        <br>
+        <p>
+            Prestamos assistência a todos modelos de iPhone, desde a primeira geração até a mais recente, trabalhando sempre com peças originais, para garantir a maior longevidade do aparelho, um serviço que é prestado com responsabilidade e qualidade. <br> <br>
+            Faça um orçamento gratuito conosco, a ConsertCell tem os menores preços e nossos serviços são os mais rapídos. <br>
+            <img src="imagens/iphone.png" alt="">
+            <br>
+         <a href="#" class="botao2">Saiba mais</a>
+        </p>
+    </div>
+    <!-- fim div texto 1 -->
+
+    <!-- div texto 2 -->
+    <div class="texto2">
+        <h2>Assistência técnica <br> Xiaomi</h2>
+        <br>
+        <p>Também prestemos assistência aos modelos da Xiaomi, atualmente a terceira fabricante de celulares que mais vende no Brasil com uma gama de produtos que atende desde celulares básicos até top de linhas. <br> <br> Trabalhamos sempre com peças originais, para garantir a maior longevidade do aparelho</p>
+        <img src="imagens/xiaomi.png" alt="">
+        <br>
+        <a href="#" class="botao2">Saiba mais</a>
+    </div>
+    <!-- fim div texto 2 -->
+
+</div>
+<!-- fim div onde inseri texto e imagem sobre celulares -->
+
+</div>
+<!-- fim div da segunda página  -->
+   
+</body>
+</html>
